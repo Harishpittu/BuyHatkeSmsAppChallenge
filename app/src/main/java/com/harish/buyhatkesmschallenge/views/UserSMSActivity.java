@@ -106,6 +106,7 @@ public class UserSMSActivity extends AppCompatActivity {
 
         SMSObject smsObject = new SMSObject();
         smsObject.setName(mobileNo);
+        smsObject.setIsSend(1);
         smsObject.setMsg(etSMSText.getText().toString());
 
         smsObjectList.add(smsObject);
@@ -143,7 +144,7 @@ public class UserSMSActivity extends AppCompatActivity {
                   SMSObject smsObject = new SMSObject();
                   smsObject.setName(mobileNo);
                   smsObject.setMsg(i.getStringExtra("msg"));
-                  smsObject.setIsSend(1);
+                  smsObject.setIsSend(0);
                   smsObjectList.add(smsObject);
                   initOrUpdateMessages();
               }
