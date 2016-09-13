@@ -7,8 +7,10 @@ Time taken to finish this : 11 hrs.
 
 Dependencies or Libraries i Used
 
- ## RecyclerView  (To show list of messages )\n
- ## GoogleDrive   (To backup data . U should select folder manually.)\n
- ## Gson          (To convert pojo class to json for backup)\n
+ ## RecyclerView  (To show list of messages )\n                                                                        
+ ## GoogleDrive   (To backup data . U should select folder manually.)\n                                 
+ ## Gson          (To convert pojo class to json for backup)\n                                           
+ 
+ note: U will get notification only when the app is in background.
 
 
