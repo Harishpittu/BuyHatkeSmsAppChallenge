@@ -5,8 +5,8 @@
 
  Dependencies or Libraries i Used
 
-  RecyclerView  (To show list of messages )
-  GoogleDrive   (To backup data . U should select folder manually.)
-  Gson          (To convert pojo class to json for backup)
+ ## RecyclerView  (To show list of messages )
+ ## GoogleDrive   (To backup data . U should select folder manually.)
+ ## Gson          (To convert pojo class to json for backup)
 
 
