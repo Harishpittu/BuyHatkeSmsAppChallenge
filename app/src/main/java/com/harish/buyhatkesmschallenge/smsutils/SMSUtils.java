@@ -37,48 +37,6 @@ public class SMSUtils {
         }
     }
 
-    public ArrayList<SMSObject> getSMSWithNumber(String number) {
-
-        ArrayList<SMSObject> smsObjectArrayList = new ArrayList<>();
-        Uri inboxURI = Uri.parse("content://sms/");
-
-        String[] reqCols = new String[]{"_id", "address", "body", "date", "status", "subject", "person", "reply_path_present"};
-
-        ContentResolver cr = context.getContentResolver();
-        String condition = "address = " + number + "||" + "address = " +"+91"+number;
-
-        Cursor cursor = cr.query(inboxURI, reqCols, condition, null, null);
-
-        if (cursor.moveToFirst()) {
-            do {
-                String name = cursor.getString(cursor.getColumnIndex("address")).replace("+91", "");
-                String msg = cursor.getString(cursor.getColumnIndex("body"));
-                String id = cursor.getString(cursor.getColumnIndex("_id"));
-                String date = cursor.getString(cursor.getColumnIndex("date"));
-                String status = cursor.getString(cursor.getColumnIndex("status"));
-                String subject = cursor.getString(cursor.getColumnIndex("subject"));
-                String person = cursor.getString(cursor.getColumnIndex("person"));
-                String isSend = cursor.getString(cursor.getColumnIndex("reply_path_present"));
-
-                SMSObject smsObject = new SMSObject();
-                smsObject.setId(Integer.parseInt(id));
-                smsObject.setName(name);
-                if (TextUtils.isEmpty(isSend)) {
-                    smsObject.setIsSend(1);
-                } else {
-                    smsObject.setIsSend(0);
-                }
-                smsObject.setDate(date);
-                smsObject.setMsg(msg);
-
-                smsObjectArrayList.add(smsObject);
-
-            } while (cursor.moveToNext());
-        }
-        cursor.close();
-        return smsObjectArrayList;
-    }
-
     public HashMap<String, ArrayList<SMSObject>> getSMS() {
 
         HashMap<String, ArrayList<SMSObject>> hashMapList = new HashMap<>();
