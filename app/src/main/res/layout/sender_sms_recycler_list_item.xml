@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:padding="5dp"
+        android:layout_marginRight="40dp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/sender_sms_style"
+        android:fontFamily="@string/roboto_light"
+        android:text="Hi macha sdfasdfasdfadsfasdfasdfadsadsfads"
+        android:id="@+id/msg"/>
+
+</RelativeLayout>

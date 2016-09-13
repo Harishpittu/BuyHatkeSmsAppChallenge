@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BuyHatkeSMSChallenge</string>
+
+    <!--roboto fonts -->
+    <string name="roboto_light">sans-serif-light</string>
+    <string name="roboto_regular">sans-serif</string>
+    <string name="roboto_condensed">sans-serif-condensed</string>
+    <string name="roboto_thin">sans-serif-thin</string>
+    <string name="roboto_medium">sans-serif-medium</string>
+
+
+    <string name="api_key">AIzaSyBYl8UDoZXeW_wnTvvDf8vMsJjoKch2u4w</string>
+
+</resources>

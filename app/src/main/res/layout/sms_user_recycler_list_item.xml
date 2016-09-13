@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="21sp"
+    android:padding="5dp"
+    android:lines="1"
+    android:layout_marginLeft="20dp"
+    android:fontFamily="@string/roboto_regular"
+    android:text="99393839383"
+    android:textColor="#424242"
+    android:id="@+id/name"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#424242"
+        android:fontFamily="@string/roboto_light"
+        android:text="Hi macha"
+        android:lines="1"
+        android:id="@+id/msg"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#424242"/>
+</LinearLayout>
